@@ -1,0 +1,14 @@
+{
+  "name": "comprehensive-elder-care-and-medical-cost-sharing-simulator4",
+  "workspaces": ["frontend", "backend"], 
+  "scripts": {
+    "dev-frontend": "npm run dev --prefix frontend",
+    "dev-backend": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run dev-frontend\" \"npm run dev-backend\"",
+    "build": "npm run build --prefix frontend",
+    "test": "npm run test --workspace frontend"
+  },
+  "devDependencies": {
+    "concurrently": "latest"
+  }
+}
